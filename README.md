@@ -18,7 +18,7 @@ See [paper](https://link.springer.com/article/10.1140/epje/s10189-021-00124-8) f
     - A Python script (.py) for processing the coordinates.
     - A text file (.txt) with the extracted coordinates from ImageJ.
 ### 3. Plane Wave Illumination
-The folder "plane_wave" contains all the necessary scripts for simulations with plane wave illumination.
+The folder "onda_plana" contains all the necessary scripts for simulations with plane wave illumination.
 Steps to Run the Plane Wave Simulation:
   * Run script “funciones_perfil_analitico_onda_plana.py” or “funciones_perfil_imagen_onda_plana.py”.
     - funciones_perfil_analitico_onda_plana.py → Use this if the profile is defined by an analytical function.
@@ -29,4 +29,4 @@ Steps to Run the Plane Wave Simulation:
   * Energy Balance Check
      - After computing the reflected and transmitted fields, verify energy conservation by running "chequeo_energ_onda_plana_diel_sin_perdidas.py". The "e" value in the output represents the percentage error.
 ### 4. Gaussian Beam Illumination
-The folder "gaussian_beam" contains the same types of scripts as "plane_wave", but adapted for simulations with a Gaussian beam as the incident wave.
+The folder "haz_gaussiano" contains the same types of scripts as "plane_wave", but adapted for simulations with a Gaussian beam as the incident wave.
