@@ -29,4 +29,15 @@ Steps to Run the Plane Wave Simulation:
   * Energy Balance Check
      - After computing the reflected and transmitted fields, verify energy conservation by running "chequeo_energ_onda_plana_diel_sin_perdidas.py". The "e" value in the output represents the percentage error.
 ### 4. Gaussian Beam Illumination
-The folder "haz_gaussiano" contains the same types of scripts as "plane_wave", but adapted for simulations with a Gaussian beam as the incident wave.
+The folder "haz_gaussiano" contains the same types of scripts as "onda_plana", but adapted for simulations with a Gaussian beam as the incident wave.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/73e6e036-56b4-440f-b9ac-f74cdb43c760" alt="Descripción de la imagen">
+  <br>
+  <em> Left: schematic description of the problem. Right: *D. vanillae* wings covered with scales. This interface is used as an example. </em>
+</p>
+
+
+
+
+
