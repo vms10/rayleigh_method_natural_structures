@@ -9,38 +9,24 @@ image of the structure, which can be either obtained from an electron microscopy
 
 See [paper](https://link.springer.com/article/10.1140/epje/s10189-021-00124-8) for more details. 
 
-## Organization
-
- - The simulations of Figure 5, 6 and 7 of the paper are generated from figures_paper_step.ipynb.
- - The simulations of Figure 9, 10 and 11 of the paper are generated from graphs_paper.ipynb.
-
-## Simulations in C++
-The chemotaxis assay simulations run in C++. To run them:
-
-1. Compile the files (with make)
-
-```
-mingw32-make
-```
-
-2. Run the executable that was generated in the previous step
-
-```
-./main
-```
-
-3. If you want to delete the .o and .exe files and re-compile, run:
-
-```
-mingw32-make clean
-```
-
-## Other considerations
-
-### main.cpp
-In the main.cpp file you can choose running example trajectories (#define trajectories). In this case, you will save a txt file with the column values detailed in the function PrintDetail in WormAgent.cpp for every time step of the simulation. The second option is to run several simulations (#define chem_index) and save only the last time point of the simulation to compute the chemotaxis index afterwards (with the chemotaxis_index.ipynb notebook). In this case, also a txt file is generated from the PrintDetail function.
- 
-The NaCl concentration during cultivation can be changed with the parameter "phenotype(25)" (C_breed). We explored the values C_breed=25,50,100.
-
-### WormAgent.h
-You can choose between a step of NaCl (#define GRAD_STEP), or the gradient use in the paper (#define GRAD_GAUS). Beware that if you use the step concentration, you need to change the constant Preexposure to a value lower than 5000 for memory reasons.
+## Project Roadmap
+### 1. Extracting Profile Coordinates from an image
+* The folder "tutorial_imagej" contains a step-by-step explanation of how to extract profile coordinates from an image using ImageJ.
+* The tutorial is demonstrated with a TEM image of the butterfly *Dione vanillae*, which is included in the folder for testing.
+### 2. Processing Coordinates with Python
+* The folder "tutorial_image_python" provides an example of how to process coordinates extracted with ImageJ for an *Euglena* image. It includes:
+    - A Python script (.py) for processing the coordinates.
+    - A text file (.txt) with the extracted coordinates from ImageJ.
+### 3. Plane Wave Illumination
+The folder "plane_wave" contains all the necessary scripts for simulations with plane wave illumination.
+Steps to Run the Plane Wave Simulation:
+  * Run script “funciones_perfil_analitico_onda_plana.py” or “funciones_perfil_imagen_onda_plana.py”.
+    - funciones_perfil_analitico_onda_plana.py → Use this if the profile is defined by an analytical function.
+    - funciones_perfil_imagen_onda_plana.py → Use this if the profile is defined by coordinates extracted from an image. Import a txt file with the coordinates. A sample file, euglenido_paper_listo.txt, is included for testing.
+  * Run the script to set up the linear system
+    - If you want to compute reflected fields, run "R_onda_plana.py" (grid parameters can be adjusted).
+    - If you want to compute transmitted fields, run "T_onda_plana.py" following the same approach.
+  * Energy Balance Check
+     - After computing the reflected and transmitted fields, verify energy conservation by running "chequeo_energ_onda_plana_diel_sin_perdidas.py". The "e" value in the output represents the percentage error.
+### 4. Gaussian Beam Illumination
+The folder "gaussian_beam" contains the same types of scripts as "plane_wave", but adapted for simulations with a Gaussian beam as the incident wave.
