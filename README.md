@@ -34,7 +34,7 @@ The folder "haz_gaussiano" contains the same types of scripts as "onda_plana", b
 <p align="center">
   <img src="https://github.com/user-attachments/assets/73e6e036-56b4-440f-b9ac-f74cdb43c760" alt="Descripción de la imagen">
   <br>
-  <em> Left: schematic description of the problem. Right: *D. vanillae* wings covered with scales. This interface is used as an example. </em>
+  <em> Left: schematic description of the problem. Right: D. vanillae wings covered with scales. The scale interface is used as an example in the codes. </em>
 </p>
 
 
