@@ -11,10 +11,10 @@ See [paper](https://link.springer.com/article/10.1140/epje/s10189-021-00124-8) f
 
 ## Project Roadmap
 ### 1. Extracting Profile Coordinates from an image
-* The folder "tutorial_imagej" contains a step-by-step explanation of how to extract profile coordinates from an image using ImageJ.
+* The folder "tutorial imagej" contains a step-by-step explanation of how to extract profile coordinates from an image using ImageJ.
 * The tutorial is demonstrated with a TEM image of the butterfly *Dione vanillae*, which is included in the folder for testing.
 ### 2. Processing Coordinates with Python
-* The folder "tutorial_image_python" provides an example of how to process coordinates extracted with ImageJ for an *Euglena* image. It includes:
+* The folder "tutorial imagen con python" provides an example of how to process coordinates extracted with ImageJ for an *Euglena* image. It includes:
     - A Python script (.py) for processing the coordinates.
     - A text file (.txt) with the extracted coordinates from ImageJ.
 ### 3. Plane Wave Illumination
